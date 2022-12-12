@@ -1,0 +1,30 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+<%= render @cart%>
+
+
+
+<!--
+<p style="color: green"><%= notice %></p>
+
+<%= render @cart %>
+
+<h3>Cart Items</h3>
+
+<table>
+  <% @cart.lineitems.each do |item| %>
+    <tr>
+      <td> <%= item.quantity %> &nbsp </td>
+      <td> <%= item.product.name %> &nbsp </td>
+      <td> <%= item.product.price %> </td>
+    </tr>
+  <% end %>
+    <tr>
+      <td colspan="2"> Total </td>
+      <td> <%= @cart.total_price %> </td>
+    </tr>
+</table>
+
+<%= button_to "Empty Cart", @cart, method: :delete, data: {confirm: 'Are you sure ?'} %>
+-->
